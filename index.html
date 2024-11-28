@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportLOOP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white">
+    <header class="min-h-screen relative overflow-hidden opacity-90 transition-all" data-aos="fade-in">
+        <div class="absolute inset-0 bg-black/50"></div> <!-- Opacity Overlay -->
+
+        <nav class="relative z-10 container mx-auto p-6 flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="md:text-3xl text-2xl font-bold hover:text-orange-500"><a href="index.html">SportLOOP</a></h1>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="about.html" class="hover:text-orange-500 transition">Services</a>
+                <a href="item.html" class="hover:text-orange-500 transition">Experience</a>
+                <a href="item2.html" class="hover:text-orange-500 transition">Process</a>
+                <a href="#" class="hover:text-orange-500 transition">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden focus:outline-none z-50">
+                <div class="menu-icon w-8 h-8 relative">
+                    <span class="block w-8 h-[3px] bg-white rounded-md mb-2 transition-all"></span>
+                    <span class="block w-8 h-[3px] bg-white rounded-md mb-2 transition-all"></span>
+                    <span class="block w-8 h-[3px] bg-white rounded-md transition-all"></span>
+                </div>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="absolute top-0 z-50 right-0 w-full min-h-screen bg-black text-white flex flex-col items-center justify-center space-y-6 transform translate-x-full transition-transform duration-500">
+            <!-- Close Button -->
+            <button id="close-btn" class="absolute top-5 right-4 text-white text-4xl font-bold focus:outline-none">
+                &times; <!-- This is the close 'X' character -->
+            </button>
+            <a href="about.html" class="text-lg hover:text-blue-400 transition">Services</a>
+            <a href="item.html" class="text-lg hover:text-blue-400 transition">Experience</a>
+            <a href="item2.html" class="text-lg hover:text-blue-400 transition">Process</a>
+            <a href="#" class="text-lg hover:text-blue-400 transition">Contact</a>
+        </div>
+
+        <!-- Logo and Background -->
+        <div class="flex flex-col md:flex-row justify-between items-center px-6 gap-12">
+            <!-- Sportloop Logo -->
+            <div class="w-full md:w-1/2 flex-shrink-0 rounded-full flex items-center justify-center mb-8 md:mb-0">
+                <img src="./assets/Sportloop_original.png" alt="Sportloop Logo" class="w-48 h-24 object-contain">
+            </div>
+
+            <!-- Sports Background -->
+            <div class="w-full md:w-1/2 md:h-[630px] h-auto flex-shrink-0 flex items-center justify-center">
+                <img src="./assets/LINES.png" alt="Sports Background"
+                    class="w-full h-full object-cover mix-blend-overlay">
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Services Section -->
+    <section class="py-10">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Our Services</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white/10 p-8 rounded-2xl backdrop-blur-lg transform hover:scale-110 cursor-pointer transition">
+                    <h4 class="text-2xl font-bold mb-4">Pre-tryout Scouting</h4>
+                    <p class="text-gray-300">Advanced analytics and talent identification using cutting-edge technology
+                    </p>
+                </div>
+                <div
+                    class="bg-white/10 p-8 rounded-2xl backdrop-blur-lg transform hover:scale-110 cursor-pointer transition">
+                    <h4 class="text-2xl font-bold mb-4">Real-time Dashboard</h4>
+                    <p class="text-gray-300">Live performance tracking and analysis during sporting events</p>
+                </div>
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-lg transform hover:scale-110 cursor-pointer transition"
+                    data-aos-delay="400">
+                    <h4 class="text-2xl font-bold mb-4">Performance Analytics</h4>
+                    <p class="text-gray-300">Comprehensive data analysis and performance improvement strategies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-10">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-4xl font-bold mb-16">Trusted By Leaders</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+                <div class="p-0 md:p-8 bg-white/5 rounded-xl transform hover:scale-110 cursor-pointer transition">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmG6xjFU7aFGkG3mc_3WfA1n-eZGHZS6r4k-B9EFPenyk0y_wM"
+                        alt="Partner 1" class="w-full h-48 md:h-full object-cover">
+                </div>
+                <div class="p-0 md:p-8 bg-white/5 rounded-xl transform hover:scale-110 cursor-pointer transition">
+                    <img src="https://images.cdn-files-a.com/uploads/6324448/2000_628e8f1b0c486.png" alt="Partner 2"
+                        class="w-full h-auto md:h-full object-cover">
+                </div>
+                <div class="p-0 md:p-8 bg-white/5 rounded-xl transform hover:scale-110 cursor-pointer transition"
+                    data-aos-delay="400">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Al_Wehda_FC_Logo.svg/400px-Al_Wehda_FC_Logo.svg.png"
+                        alt="Partner 3" class="w-full h-48 md:h-full object-cover">
+                </div>
+                <div class="p-0 md:p-8 bg-white/5 rounded-xl transform hover:scale-110 cursor-pointer transition"
+                    data-aos-delay="600">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Al_Wehda_FC_Logo.svg/400px-Al_Wehda_FC_Logo.svg.png"
+                        alt="Partner 4" class="w-full h-48 md:h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-16 text-center">Our Achievements</h2>
+            <div class="timeline space-y-8">
+                <div
+                    class="achievement-item opacity-0 animate-fade-in bg-white/10 rounded-xl p-6 transform hover:scale-102 transition-all duration-300">
+                    <h3 class="text-2xl font-bold">2023</h3>
+                    <p class="text-gray-300">Partnered with 50+ Professional Teams</p>
+                </div>
+                <div
+                    class="achievement-item opacity-0 animate-fade-in bg-white/10 rounded-xl p-6 transform hover:scale-102 transition-all duration-300">
+                    <h3 class="text-2xl font-bold">2022</h3>
+                    <p class="text-gray-300">Innovation Award in Sports Technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rating Process Section -->
+    <section class="py-10">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Our Rating Process</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
+                <!-- Speed Rating -->
+                <div class="bg-white/10 p-6 rounded-xl shadow-lg cursor-pointer " data-aos="fade-up">
+                    <h4 class="text-2xl font-bold text-yellow-500 mb-4 text-center">Speed</h4>
+                    <div class="flex justify-center mb-2">
+                        <span class="text-yellow-500 text-3xl">★★★★☆</span>
+                    </div>
+                    <p class="text-center text-gray-300">Advanced speed metrics using cutting-edge tracking technology.
+                    </p>
+                    <div class="mt-4 text-yellow-400 text-center">
+                        <span>#Acceleration</span> | <span>#Performance</span>
+                    </div>
+                </div>
+                <!-- Agility Rating -->
+                <div class="bg-white/10 p-6 rounded-xl shadow-lg cursor-pointer " data-aos="fade-up"
+                    data-aos-delay="200">
+                    <h4 class="text-2xl font-bold text-yellow-500 mb-4 text-center">Agility</h4>
+                    <div class="flex justify-center mb-2">
+                        <span class="text-yellow-500 text-3xl">★★★★★</span>
+                    </div>
+                    <p class="text-center text-gray-300">Comprehensive agility assessment through multiple parameters.
+                    </p>
+                    <div class="mt-4 text-yellow-400 text-center">
+                        <span>#Flexibility</span> | <span>#Endurance</span>
+                    </div>
+                </div>
+                <!-- Strength Rating -->
+                <div class="bg-white/10 p-6 rounded-xl shadow-lg cursor-pointer " data-aos="fade-up"
+                    data-aos-delay="400">
+                    <h4 class="text-2xl font-bold text-yellow-500 mb-4 text-center">Strength</h4>
+                    <div class="flex justify-center mb-2">
+                        <span class="text-yellow-500 text-3xl">★★★★☆</span>
+                    </div>
+                    <p class="text-center text-gray-300">Power and strength evaluation using scientific methods.</p>
+                    <div class="mt-4 text-yellow-400 text-center">
+                        <span>#Power</span> | <span>#Stamina</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Football Club Process -->
+    <section class="py-10 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Football Club Process</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Performance Rating -->
+                <div
+                    class="w-48 h-48 mb-5  rounded-full bg-purple-600 flex items-center justify-center transform hover:scale-110 transition-all cursor-pointer relative group">
+                    <span class="text-2xl font-bold text-white">Performance</span>
+                    <div class="absolute invisible group-hover:visible bg-purple-700 p-4 rounded-xl -bottom-20 w-64">
+                        <p class="text-white">Evaluation of player performance</p>
+                    </div>
+                </div>
+
+                <!-- Potential Rating -->
+                <div
+                    class="w-48 h-48  rounded-full bg-yellow-600 flex items-center justify-center transform hover:scale-110 transition-all cursor-pointer relative group">
+                    <span class="text-2xl font-bold text-white">Future Potential</span>
+                    <div class="absolute invisible group-hover:visible bg-yellow-700 p-4 rounded-xl -bottom-20 w-64">
+                        <p class="text-white">Analysis of a player's growth potential and future impact</p>
+                    </div>
+                </div>
+
+                <!-- Skills Rating -->
+                <div
+                    class="w-48 h-48  rounded-full bg-blue-600 flex items-center justify-center transform hover:scale-110 transition-all cursor-pointer relative group">
+                    <span class="text-2xl font-bold text-white">Football Skills</span>
+                    <div class="absolute invisible group-hover:visible bg-blue-700 p-4 rounded-xl -bottom-20 w-64">
+                        <p class="text-white">In-depth review of technical, tactical, and physical skills</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-10 ">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-5 gap-8">
+                <!-- About Section -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">SportLOOP</h4>
+                    <p class="text-gray-400">Transforming sports through technology</p>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div>
+                    <h5 class="text-lg font-bold mb-4">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Section -->
+                <div>
+                    <h5 class="text-lg font-bold mb-4">Services</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Scouting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Analytics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Training</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect Section -->
+                <div>
+                    <h5 class="text-lg font-bold mb-4">Connect</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Twitter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">LinkedIn</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Instagram</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us Section -->
+                <div>
+                    <h5 class="text-lg font-bold mb-4">Contact Us</h5>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="tel:+966542136622" class="text-gray-400 hover:text-white transition">
+                                <span>Phone: </span>+966542136622
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:+966542136622" class="text-gray-400 hover:text-white transition">
+                                <span>Email: </span>ceo@tktloop.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 SportLOOP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('close-btn');
+
+        // Toggle the menu visibility
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('translate-x-full');
+            mobileMenu.classList.toggle('translate-x-0');
+        });
+
+        // Close the menu when clicking the close button
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenu.classList.remove('translate-x-0');
+        });
+
+        // Close the mobile menu when clicking outside (optional)
+        window.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                mobileMenu.classList.add('translate-x-full');
+                mobileMenu.classList.remove('translate-x-0');
+            }
+        });
+    </script>
+    <!-- Scripts -->
+
+</body>
+
+</html>

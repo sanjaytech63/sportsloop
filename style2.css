@@ -1,0 +1,45 @@
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+}
+
+.animate-slide {
+    animation: slide 15s linear infinite;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to bottom, #60A5FA, #7C3AED);
+}
+
+.achievement-item {
+    margin-left: 2rem;
+}
+
+.achievement-item::before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #60A5FA;
+}
