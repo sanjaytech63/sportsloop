@@ -20,6 +20,12 @@
                 <img src="./assets/Sportloop_original.png" alt="Sportloop Logo" class="w-25 h-10  object-contain">
             </div>
 
+
+            <!-- <div class="w-1/4 ">
+                <img src="https://w7.pngwing.com/pngs/340/239/png-transparent-setting-3d-icon.png" alt="Sportloop Logo" class="w-25 h-10  object-contain">
+            </div> -->
+
+           
             <!-- Desktop Menu -->
             <!-- <div class="hidden md:flex space-x-8">
                 <a href="about.html" class="hover:text-orange-500 transition">Services</a>
@@ -41,44 +47,46 @@
 
 
             <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="block md:hidden focus:outline-none z-50">
+            <!-- <button id="menu-btn" class="block md:hidden focus:outline-none z-50">
                 <div class="menu-icon w-8 h-8 relative">
                     <span class="block w-8 h-[3px] bg-white rounded-md mb-2 transition-all"></span>
                     <span class="block w-8 h-[3px] bg-white rounded-md mb-2 transition-all"></span>
                     <span class="block w-8 h-[3px] bg-white rounded-md transition-all"></span>
                 </div>
-            </button>
+            </button> -->
         </nav>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu"
+        <!-- <div id="mobile-menu"
             class="absolute top-0 z-50 right-0 w-full min-h-screen bg-black text-white flex flex-col items-center justify-center space-y-6 transform translate-x-full transition-transform duration-500">
-            <!-- Close Button -->
+          
             <button id="close-btn" class="absolute top-5 right-4 text-white text-4xl font-bold focus:outline-none">
-                &times; <!-- This is the close 'X' character -->
+                &times; 
             </button>
             <a href="about.html" class="text-lg hover:text-blue-400 transition">Services</a>
             <a href="item.html" class="text-lg hover:text-blue-400 transition">Experience</a>
             <a href="item2.html" class="text-lg hover:text-blue-400 transition">Process</a>
             <a href="#" class="text-lg hover:text-blue-400 transition">Contact</a>
-        </div>
+        </div> -->
 
         <!-- Logo and Background -->
         <div class="flex flex-col md:flex-row justify-between items-center px-6 gap-12">
             <!-- Sportloop Logo -->
             <div class="w-full  md:w-1/2 md:h-[630px] h-auto flex-shrink-0 flex items-center justify-center">
                 <!-- Left-aligned Text -->
-                <p class="absolute left-1/4  text-center text-xl text-center font-medium	 md:text-3xl animate-pulse	 mb-12 max-w-2xl text-white mx-6" data-aos="fade-up" data-aos-delay="200">
+                <p class="absolute top-[50%] left-0 md:left-1/4  text-center text-xl text-center font-medium	 md:text-3xl animate-pulse	  max-w-2xl text-white mx-6"
+                    data-aos="fade-up" data-aos-delay="200">
                     Leading the way in scouting, talent development, and digital transformation.
                 </p>
             </div>
-        
+
             <!-- Sports Background -->
             <div class="w-full  md:w-1/2 md:h-[630px] h-auto flex-shrink-0 flex items-center justify-center">
-                <img src="./assets/LINES.png" alt="Sports Background" class="w-full relative h-full object-cover mix-blend-overlay">
+                <img src="./assets/LINES.png" alt="Sports Background"
+                    class="w-full relative h-full object-cover mix-blend-overlay">
             </div>
         </div>
-        
+
         </div>
 
     </header>
@@ -205,34 +213,35 @@
 
 
     <!-- Football Club Process -->
-    <section class="py-10 text-white">
-        <div class="container mx-auto px-4">
+    <section class="py-24 text-white">
+        <div class="container mx-auto">
             <h2 class="text-4xl font-bold text-center mb-16">Football Club Process</h2>
-            <div class="flex flex-wrap justify-center gap-8">
+            <div class="flex justify-around items-center gap-12 flex-wrap">
                 <!-- Performance Rating -->
                 <div
-                    class="w-48 h-48 mb-5  rounded-full bg-purple-600 flex items-center justify-center transform hover:scale-110 transition-all cursor-pointer relative group">
-                    <span class="text-2xl font-bold text-white">Performance</span>
-                    <div class="absolute invisible group-hover:visible bg-purple-700 p-4 rounded-xl -bottom-20 w-64">
-                        <p class="text-white">Evaluation of player performance</p>
+                    class="w-48 h-48 mb-5 rounded-full bg-purple-600 flex items-center justify-center transform hover:scale-110 transition-all cursor-pointer relative group">
+                    <span class="text-2xl font-bold text-white text-center">Performance</span>
+                    <div class="absolute invisible group-hover:visible bg-purple-700 p-4 rounded-xl bottom-13 w-64">
+                        <p class="text-white text-sm">Evaluation of player performance based on various metrics</p>
                     </div>
                 </div>
 
                 <!-- Potential Rating -->
                 <div
-                    class="w-48 h-48  rounded-full bg-yellow-600 flex items-center justify-center transform hover:scale-110 transition-all cursor-pointer relative group">
-                    <span class="text-2xl font-bold text-white">Future Potential</span>
-                    <div class="absolute invisible group-hover:visible bg-yellow-700 p-4 rounded-xl -bottom-20 w-64">
-                        <p class="text-white">Analysis of a player's growth potential and future impact</p>
+                    class="w-48 h-48 rounded-full bg-yellow-600 flex items-center justify-center transform hover:scale-110 transition-all cursor-pointer relative group">
+                    <span class="text-2xl font-bold text-white text-center">Future Potential</span>
+                    <div
+                        class="absolute invisible group-hover:visible bg-yellow-700 p-4 rounded-xl bottom-13 w-64 z-10">
+                        <p class="text-white text-sm">Analysis of a player's growth potential and future impact</p>
                     </div>
                 </div>
 
                 <!-- Skills Rating -->
                 <div
-                    class="w-48 h-48  rounded-full bg-blue-600 flex items-center justify-center transform hover:scale-110 transition-all cursor-pointer relative group">
-                    <span class="text-2xl font-bold text-white">Football Skills</span>
-                    <div class="absolute invisible group-hover:visible bg-blue-700 p-4 rounded-xl -bottom-20 w-64">
-                        <p class="text-white">In-depth review of technical, tactical, and physical skills</p>
+                    class="w-48 h-48 rounded-full bg-blue-600 flex items-center justify-center transform hover:scale-110 transition-all cursor-pointer relative group">
+                    <span class="text-2xl font-bold text-white text-center">Football Skills</span>
+                    <div class="absolute invisible group-hover:visible bg-blue-700 p-4 rounded-xl bottom-13 w-64 z-10">
+                        <p class="text-white text-sm">In-depth review of technical, tactical, and physical skills</p>
                     </div>
                 </div>
             </div>
